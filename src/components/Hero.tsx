@@ -53,7 +53,7 @@ export default function Hero() {
             <h1 className="text-5xl md:text-7xl font-bold">
               Hello, I'm{" "}
               <span className="bg-gradient-portfolio bg-clip-text text-transparent">
-                insun kim
+                Your Name
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
