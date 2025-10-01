@@ -28,7 +28,7 @@ export default function AdminPanel({ isOpen, onClose }: AdminPanelProps) {
   const [editData, setEditData] = useState<Record<string, string>>({});
   const [activeTab, setActiveTab] = useState("about");
 
-  const loadData = (data: any) => {
+  const loadData = (data: unknown) => {
     return JSON.stringify(data, null, 2);
   };
 
@@ -42,7 +42,7 @@ export default function AdminPanel({ isOpen, onClose }: AdminPanelProps) {
   };
 
   const handleDownloadAll = () => {
-    const allData: Record<string, any> = {};
+    const allData: Record<string, unknown> = {};
     
     for (const { key, data } of dataFiles) {
       allData[key] = data;
