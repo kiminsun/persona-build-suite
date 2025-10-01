@@ -5,6 +5,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
+import aboutData from "@/data/about.json";
+import experienceData from "@/data/experience.json";
+import skillsData from "@/data/skills.json";
+import projectsData from "@/data/projects.json";
+import awardsData from "@/data/awards.json";
 
 interface AdminPanelProps {
   isOpen: boolean;
@@ -12,46 +17,35 @@ interface AdminPanelProps {
 }
 
 const dataFiles = [
-  { key: "about", label: "About", file: "about.json" },
-  { key: "experience", label: "Experience", file: "experience.json" },
-  { key: "skills", label: "Skills", file: "skills.json" },
-  { key: "projects", label: "Projects", file: "projects.json" },
-  { key: "awards", label: "Awards", file: "awards.json" },
+  { key: "about", label: "About", data: aboutData },
+  { key: "experience", label: "Experience", data: experienceData },
+  { key: "skills", label: "Skills", data: skillsData },
+  { key: "projects", label: "Projects", data: projectsData },
+  { key: "awards", label: "Awards", data: awardsData },
 ];
 
 export default function AdminPanel({ isOpen, onClose }: AdminPanelProps) {
   const [editData, setEditData] = useState<Record<string, string>>({});
   const [activeTab, setActiveTab] = useState("about");
 
-  const loadData = async (file: string) => {
-    try {
-      const module = await import(`../data/${file}`);
-      return JSON.stringify(module.default, null, 2);
-    } catch (error) {
-      console.error("Error loading data:", error);
-      return "{}";
-    }
+  const loadData = (data: any) => {
+    return JSON.stringify(data, null, 2);
   };
 
-  const handleTabChange = async (value: string) => {
+  const handleTabChange = (value: string) => {
     setActiveTab(value);
-    const file = dataFiles.find(f => f.key === value)?.file;
-    if (file && !editData[value]) {
-      const data = await loadData(file);
+    const fileData = dataFiles.find(f => f.key === value)?.data;
+    if (fileData && !editData[value]) {
+      const data = loadData(fileData);
       setEditData(prev => ({ ...prev, [value]: data }));
     }
   };
 
-  const handleDownloadAll = async () => {
+  const handleDownloadAll = () => {
     const allData: Record<string, any> = {};
     
-    for (const { key, file } of dataFiles) {
-      try {
-        const module = await import(`../data/${file}`);
-        allData[key] = module.default;
-      } catch (error) {
-        console.error(`Error loading ${file}:`, error);
-      }
+    for (const { key, data } of dataFiles) {
+      allData[key] = data;
     }
 
     const dataStr = JSON.stringify(allData, null, 2);
