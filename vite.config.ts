@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // GitHub Pages 배포를 위한 base 경로 설정
-  base: mode === 'production' ? '/persona-build-suite/' : '/',
+  base: '/persona-build-suite/',
   server: {
     host: "::",
     port: 8080,
