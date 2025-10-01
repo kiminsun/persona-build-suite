@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React", "level": 95, "icon": "⚛️" },
+        { "name": "Next.js", "level": 90, "icon": "▲" },
+        { "name": "TypeScript", "level": 92, "icon": "📘" },
+        { "name": "Tailwind CSS", "level": 88, "icon": "🎨" },
+        { "name": "HTML/CSS", "level": 95, "icon": "🌐" }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "Node.js", "level": 90, "icon": "🟢" },
+        { "name": "Python", "level": 85, "icon": "🐍" },
+        { "name": "Express", "level": 88, "icon": "⚡" },
+        { "name": "PostgreSQL", "level": 82, "icon": "🐘" },
+        { "name": "MongoDB", "level": 80, "icon": "🍃" }
+      ]
+    },
+    {
+      "name": "Data",
+      "skills": [
+        { "name": "SQL", "level": 90, "icon": "📊" },
+        { "name": "Oracle", "level": 85, "icon": "🔴" },
+        { "name": "Data Analysis", "level": 83, "icon": "📈" },
+        { "name": "ETL", "level": 78, "icon": "🔄" }
+      ]
+    },
+    {
+      "name": "DevOps",
+      "skills": [
+        { "name": "Docker", "level": 85, "icon": "🐳" },
+        { "name": "Git", "level": 92, "icon": "📦" },
+        { "name": "CI/CD", "level": 80, "icon": "🔧" },
+        { "name": "AWS", "level": 75, "icon": "☁️" }
+      ]
+    }
+  ]
+}

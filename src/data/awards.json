@@ -1,0 +1,47 @@
+[
+  {
+    "id": "award1",
+    "type": "award",
+    "title": "Best Innovation Award",
+    "period": "2023.11",
+    "institution": "Tech Conference 2023",
+    "description": "Recognized for developing innovative data analytics solution that transformed business intelligence processes.",
+    "icon": "🏆"
+  },
+  {
+    "id": "award2",
+    "type": "certificate",
+    "title": "AWS Certified Solutions Architect",
+    "period": "2023.06",
+    "institution": "Amazon Web Services",
+    "description": "Professional certification demonstrating expertise in designing distributed systems on AWS.",
+    "icon": "📜"
+  },
+  {
+    "id": "award3",
+    "type": "award",
+    "title": "Employee of the Year",
+    "period": "2022.12",
+    "institution": "Tech Innovation Corp",
+    "description": "Awarded for outstanding performance and leadership in delivering critical projects.",
+    "icon": "⭐"
+  },
+  {
+    "id": "award4",
+    "type": "training",
+    "title": "Advanced React Patterns",
+    "period": "2022.08",
+    "institution": "Frontend Masters",
+    "description": "Completed intensive training on advanced React patterns, performance optimization, and best practices.",
+    "icon": "🎓"
+  },
+  {
+    "id": "award5",
+    "type": "certificate",
+    "title": "Professional Scrum Master",
+    "period": "2021.10",
+    "institution": "Scrum.org",
+    "description": "Certified in Agile methodologies and Scrum framework for effective team management.",
+    "icon": "📜"
+  }
+]

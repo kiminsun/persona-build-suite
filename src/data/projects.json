@@ -1,0 +1,56 @@
+[
+  {
+    "id": "proj1",
+    "title": "E-Commerce Platform",
+    "description": "A full-featured online shopping platform with real-time inventory management, secure payment processing, and admin dashboard.",
+    "image": "project1.jpg",
+    "techStack": ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+    "tags": ["#WebDevelopment", "#E-Commerce", "#FullStack"],
+    "contribution": "Led frontend architecture and implemented payment integration. Designed responsive UI/UX for optimal mobile shopping experience.",
+    "results": [
+      "Processed $2M+ in transactions within first year",
+      "Achieved 99.9% uptime with zero payment failures",
+      "Improved conversion rate by 35% through UX optimization"
+    ],
+    "links": {
+      "github": "https://github.com/yourusername/ecommerce",
+      "demo": "https://demo-ecommerce.example.com"
+    }
+  },
+  {
+    "id": "proj2",
+    "title": "Data Analytics Dashboard",
+    "description": "Enterprise-level business intelligence dashboard providing real-time analytics, custom reports, and data visualization for executive decision making.",
+    "image": "project2.jpg",
+    "techStack": ["React", "Python", "Oracle", "Chart.js", "Docker"],
+    "tags": ["#DataAnalysis", "#Dashboard", "#BusinessIntelligence"],
+    "contribution": "Architected data pipeline and visualization layer. Implemented ETL processes for multiple data sources and created interactive dashboards.",
+    "results": [
+      "Reduced report generation time from hours to seconds",
+      "Integrated 10+ data sources into unified platform",
+      "Enabled data-driven decisions saving $500K annually"
+    ],
+    "links": {
+      "github": "https://github.com/yourusername/analytics",
+      "presentation": "https://slides.example.com/analytics"
+    }
+  },
+  {
+    "id": "proj3",
+    "title": "Task Management SaaS",
+    "description": "Cloud-based project management tool with team collaboration features, time tracking, and integrated communication.",
+    "image": "project1.jpg",
+    "techStack": ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
+    "tags": ["#SaaS", "#Productivity", "#Collaboration"],
+    "contribution": "Built real-time collaboration features and notification system. Designed scalable architecture supporting 10K+ concurrent users.",
+    "results": [
+      "Onboarded 500+ teams in beta phase",
+      "Achieved 92% user satisfaction score",
+      "Improved team productivity by 40% (user surveys)"
+    ],
+    "links": {
+      "github": "https://github.com/yourusername/taskmanager",
+      "demo": "https://taskmanager.example.com"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "exp1",
+    "company": "Tech Innovation Corp",
+    "position": "Senior Full-Stack Developer",
+    "period": "2021.03 - Present",
+    "description": "Leading development of enterprise web applications and data analytics platforms",
+    "achievements": [
+      "Architected and deployed microservices infrastructure serving 100K+ daily users",
+      "Reduced application load time by 60% through optimization and caching strategies",
+      "Mentored team of 5 junior developers, improving team productivity by 40%",
+      "Implemented CI/CD pipeline reducing deployment time from hours to minutes"
+    ]
+  },
+  {
+    "id": "exp2",
+    "company": "Digital Solutions Inc",
+    "position": "Full-Stack Developer",
+    "period": "2019.06 - 2021.02",
+    "description": "Developed customer-facing web applications and internal tools",
+    "achievements": [
+      "Built responsive e-commerce platform processing $2M+ in annual transactions",
+      "Integrated payment systems (Stripe, PayPal) with 99.9% uptime",
+      "Developed RESTful APIs serving 50+ endpoints with comprehensive documentation",
+      "Collaborated with UX team to improve user engagement by 35%"
+    ]
+  },
+  {
+    "id": "exp3",
+    "company": "StartUp Ventures",
+    "position": "Junior Developer",
+    "period": "2018.01 - 2019.05",
+    "description": "Contributed to MVP development and feature iterations",
+    "achievements": [
+      "Implemented responsive UI components using React and Material-UI",
+      "Optimized database queries improving response time by 45%",
+      "Participated in agile development process with bi-weekly sprints",
+      "Created automated testing suite with 80% code coverage"
+    ]
+  }
+]
