@@ -1,0 +1,46 @@
+name: 🔍 CI (Continuous Integration)
+
+# Pull Request에서만 실행
+on:
+  pull_request:
+    branches: [ main ]
+
+# 권한 설정
+permissions:
+  contents: read
+
+jobs:
+  # 코드 품질 검사
+  quality-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout 코드
+      uses: actions/checkout@v4
+      
+    - name: 📦 Node.js 설정
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 🔧 의존성 설치
+      run: npm ci
+      
+    - name: 🔍 TypeScript 타입 체크
+      run: npx tsc --noEmit
+      
+    - name: 🧹 린트 검사
+      run: npm run lint
+      
+    - name: 🏗️ 빌드 테스트
+      run: npm run build:prod
+      
+    - name: 📊 빌드 크기 확인
+      run: |
+        echo "빌드된 파일들:"
+        ls -la dist/
+        echo "빌드 크기:"
+        du -sh dist/
+        echo "주요 파일 크기:"
+        du -h dist/assets/*.js | sort -hr | head -5
