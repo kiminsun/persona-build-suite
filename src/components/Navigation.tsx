@@ -81,11 +81,11 @@ export default function Navigation({ onLogoClick, logoClickCount }: NavigationPr
             {/* Logo */}
             <button
               onClick={onLogoClick}
-              className="text-2xl font-bold bg-gradient-portfolio bg-clip-text text-transparent hover:scale-105 transition-transform"
+              className="text-3xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent hover:scale-110 transition-all duration-300 tracking-wider"
             >
-              Portfolio
+              INSUN
               {logoClickCount > 0 && logoClickCount < 5 && (
-                <span className="text-xs ml-1 text-muted-foreground">({logoClickCount})</span>
+                <span className="text-xs ml-2 text-muted-foreground font-normal">({logoClickCount})</span>
               )}
             </button>
 
