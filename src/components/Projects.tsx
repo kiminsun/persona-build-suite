@@ -9,6 +9,21 @@ import { Button } from "@/components/ui/button";
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  tags: string[];
+  contribution: string;
+  results: string[];
+  links: {
+    github: string;
+    demo: string;
+  };
+}
+
 const imageMap: Record<string, string> = {
   "project1.jpg": project1,
   "project2.jpg": project2,
@@ -20,7 +35,7 @@ export default function Projects() {
     threshold: 0.1,
   });
 
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section id="projects" className="py-20 bg-section-bg-alt">
